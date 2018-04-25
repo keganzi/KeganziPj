@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.cuten.keganzipj">
+    package="com.example.cuten.android_sms">
     <uses-permission android:name="android.permission.CALL_PHONE" > </uses-permission>
     <uses-permission android:name="android.permission.SEND_SMS" > </uses-permission>
     <uses-permission android:name="android.permission.RECEIVE_SMS" > </uses-permission>
@@ -11,7 +11,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.cuten.android_sms.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

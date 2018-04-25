@@ -1,4 +1,4 @@
-package com.example.cuten.keganzipj;
+package com.example.cuten.android_sms;
 
 import android.Manifest;
 import android.content.DialogInterface;
@@ -14,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
 
 //Git 확인
 
