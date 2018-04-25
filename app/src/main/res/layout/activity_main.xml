@@ -1,0 +1,37 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableRow>
+        <TextView android:text="전화번호" />
+        <EditText
+            android:id="@+id/et_number"
+            android:hint="여기에 전화번호를 입력합니다."
+            android:text=""
+            android:inputType="number"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="문자메시지" />
+        <EditText
+            android:id="@+id/et_message"
+            android:hint="여기에 문자메시지를 입력합니다."
+            android:text="" />
+    </TableRow>
+
+    <Button
+        android:paddingTop="10dp"
+        android:id="@+id/bt_call"
+        android:onClick="onClickCall"
+        android:text="전화하기" />
+    <Button
+        android:id="@+id/bt_dial"
+        android:onClick="onClickDial"
+        android:text="다이얼창 열기" />
+    <Button
+        android:id="@+id/bt_sms"
+        android:onClick="onClickSMS"
+        android:text="문자 보내기" />
+
+</TableLayout>
