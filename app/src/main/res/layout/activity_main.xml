@@ -1,37 +1,58 @@
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    tools:context="com.example.cuten.android_sms.MainActivity">
 
-    <TableRow>
-        <TextView android:text="전화번호" />
-        <EditText
-            android:id="@+id/et_number"
-            android:hint="여기에 전화번호를 입력합니다."
-            android:text=""
-            android:inputType="number"/>
-    </TableRow>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="83dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:text="전화번호"
+        android:textStyle="bold" />
 
-    <TableRow>
-        <TextView android:text="문자메시지" />
-        <EditText
-            android:id="@+id/et_message"
-            android:hint="여기에 문자메시지를 입력합니다."
-            android:text="" />
-    </TableRow>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="78dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="93dp"
+        android:text="내용"
+        android:textStyle="bold" />
 
-    <Button
-        android:paddingTop="10dp"
-        android:id="@+id/bt_call"
-        android:onClick="onClickCall"
-        android:text="전화하기" />
-    <Button
-        android:id="@+id/bt_dial"
-        android:onClick="onClickDial"
-        android:text="다이얼창 열기" />
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="전화번호"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="문자내용"
+        android:textSize="12sp" />
+
     <Button
         android:id="@+id/bt_sms"
-        android:onClick="onClickSMS"
-        android:text="문자 보내기" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="168dp"
+        android:text="전송" />
 
-</TableLayout>
+
+</RelativeLayout>
