@@ -23,12 +23,15 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    EditText num, mass;
+    Button button;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final EditText num = (EditText) findViewById(R.id.editText);
-        final EditText mass = (EditText) findViewById(R.id.editText2);
-        Button button = (Button)findViewById(R.id.bt_sms);
+         num = (EditText) findViewById(R.id.editText);
+         mass = (EditText) findViewById(R.id.editText2);
+         button = (Button)findViewById(R.id.bt_sms);
 
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
             checkVerify();
@@ -106,6 +109,5 @@ public class MainActivity extends AppCompatActivity {
     {
         SmsManager sms = SmsManager.getDefault();
         sms.sendTextMessage(phoneNumber, null, message, null, null);
-        Toast.makeText(getApplicationContext(),"전송 성공", Toast.LENGTH_SHORT).show();
     }
 }

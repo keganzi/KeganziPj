@@ -1,4 +1,4 @@
-package com.example.cuten.keganzipj;
+package com.example.cuten.android_sms;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
